@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/modal.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="creator__bg closer"></div>
+    <div class="modal__creator">
+        <h2>Добавить</h2>
+        <form name="creator">
+            <input type="text" name="title">
+            <input type="text" name="description">
+            <input type="time" name="time">
+            <input type="date" name="date">
+            <select name="status">
+                <option value="false">Не выполнено</option>
+                <option value="true">Выполнено</option>
+            </select>
+            <button class="closer">Добавить</button>
+        </form>
+    </div>
+    <main>
+        <div class="container">
+            <div class="container__heading">
+                <h2>Dashboard</h2>
+                <button class="adder">Добавить задачу</button>
+            </div>
+            <div class="container__content">
+                <div class="type__of__table">
+                    <span>Показать задачи как:</span>
+                    <span class="unselected__type" data-type="table">Таблица</span>
+                    <span class="unselected__type" data-type="tile">Плитка</span>
+                </div>
+                <div class="container__table">
+                </div>
+                <div class="container__bar">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
